@@ -64,8 +64,13 @@ const Form = ({ onSubmit }) => {
   return (
     <>
       <form className={styles.form} onSubmit={handleSubmit}>
+        <div>
+          <h4 className="d-flex justify-content-center">
+            Please fill the user name to get the details
+          </h4>
+        </div>
         <label className={styles.label}>
-          Name:
+          Username:
           <input
             type="text"
             value={userInputs?.["userName"] || ""}
